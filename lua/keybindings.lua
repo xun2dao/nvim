@@ -25,3 +25,6 @@ map("n", "<leader>t", ":NvimTreeToggle<CR>", opt)
 map("n", "<leader>a", ":BufferLineCyclePrev<CR>", opt)
 map("n", "<leader>f", ":BufferLineCycleNext<CR>", opt)
 map("n", "<leader>c", ":bp | bd #<CR>", opt)
+
+-- markdown
+map("n", "mk", ":Glow<CR>", opt)
