@@ -28,3 +28,7 @@ map("n", "<leader>c", ":bp | bd #<CR>", opt)
 
 -- markdown
 map("n", "mk", ":Glow<CR>", opt)
+
+-- translate
+map("n", "<leader>d", "<Plug>TranslateW", opt)
+map("v", "<leader>w", "<Plug>TranslateWV", opt)
