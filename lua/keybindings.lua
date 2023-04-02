@@ -17,6 +17,9 @@ map("n", "<C-k>", "<C-w>k", opt)
 map("n", "<C-j>", "<C-w>j", opt)
 map("n", "<C-l>", "<C-w>l", opt)
 
+-- compile
+map("n", "<leader>b", ":!cmake --build build<CR>",opt)
+
 
 -- nvim-tree
 map("n", "<leader>t", ":NvimTreeToggle<CR>", opt)
