@@ -35,3 +35,12 @@ map("n", "mk", ":Glow<CR>", opt)
 -- translate
 map("n", "<leader>d", "<Plug>TranslateW", opt)
 map("v", "<leader>w", "<Plug>TranslateWV", opt)
+map("n", "to", ":FTermOpen<CR>", opt)
+map("n", "te", ":FTermExit<CR>", opt)
+map("n", "tc", ":FTermClose<CR>", opt)
+map("n", "tt", ":FTermToggle<CR>", opt)
+
+
+-- nvim terminal
+map("n", "tm", ":ToggleTerm<CR>", opt)
+

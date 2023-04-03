@@ -8,6 +8,8 @@ lua require('plugin-config/nvim-cmp')
 lua require('plugin-config/glow')
 lua require('plugin-config/nvim-treesitter')
 lua require('plugin-config/navigator')
+lua require('plugin-config/telescope')
+lua require('plugin-config/dashboard')
 
 
 colorscheme gruvbox
