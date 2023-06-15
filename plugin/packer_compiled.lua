@@ -100,12 +100,23 @@ _G.packer_plugins = {
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
   ["dashboard-nvim"] = {
-    config = { "\27LJ\2\n�\3\0\0\6\0\r\0\0216\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0005\4\4\0=\4\6\0034\4\5\0005\5\a\0>\5\1\0045\5\b\0>\5\2\0045\5\t\0>\5\3\0045\5\n\0>\5\4\4=\4\v\3=\3\f\2B\0\2\1K\0\1\0\vconfig\rshortcut\1\0\4\bkey\6d\vaction\23Telescope dotfiles\tdesc\17 dotfiles\ngroup\vNumber\1\0\4\bkey\6a\vaction\18Telescope app\tdesc\r Apps\ngroup\19DiagnosticHint\1\0\6\ngroup\nLabel\ticon\t \bkey\6f\vaction\25Telescope find_files\tdesc\nFiles\ficon_hl\14@variable\1\0\4\bkey\6u\vaction\16Lazy update\tdesc\15 Update\ngroup\14@property\16week_header\1\0\0\1\0\1\venable\2\1\0\1\ntheme\nhyper\nsetup\14dashboard\frequire\0" },
+    config = { "\27LJ\2\n�\3\0\0\6\0\r\0\0216\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0005\4\4\0=\4\6\0034\4\5\0005\5\a\0>\5\1\0045\5\b\0>\5\2\0045\5\t\0>\5\3\0045\5\n\0>\5\4\4=\4\v\3=\3\f\2B\0\2\1K\0\1\0\vconfig\rshortcut\1\0\4\tdesc\17 dotfiles\vaction\23Telescope dotfiles\bkey\6d\ngroup\vNumber\1\0\4\tdesc\r Apps\vaction\18Telescope app\bkey\6a\ngroup\19DiagnosticHint\1\0\6\tdesc\nFiles\ticon\t \ngroup\nLabel\bkey\6f\vaction\25Telescope find_files\ficon_hl\14@variable\1\0\4\tdesc\15 Update\vaction\16Lazy update\bkey\6u\ngroup\14@property\16week_header\1\0\0\1\0\1\venable\2\1\0\1\ntheme\nhyper\nsetup\14dashboard\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
     path = "/home/daishan/.local/share/nvim/site/pack/packer/opt/dashboard-nvim",
     url = "https://github.com/glepnir/dashboard-nvim"
+  },
+  ["formatter.nvim"] = {
+    loaded = true,
+    path = "/home/daishan/.local/share/nvim/site/pack/packer/start/formatter.nvim",
+    url = "https://github.com/mhartington/formatter.nvim"
+  },
+  ["galaxyline.nvim"] = {
+    config = { "\27LJ\2\n9\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\30galaxyline.themes.eviline\frequire\0" },
+    loaded = true,
+    path = "/home/daishan/.local/share/nvim/site/pack/packer/start/galaxyline.nvim",
+    url = "https://github.com/NTBBloodbath/galaxyline.nvim"
   },
   ["glow.nvim"] = {
     loaded = true,
@@ -116,11 +127,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/daishan/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
-  },
-  ["guihua.lua"] = {
-    loaded = true,
-    path = "/home/daishan/.local/share/nvim/site/pack/packer/start/guihua.lua",
-    url = "https://github.com/ray-x/guihua.lua"
   },
   ["lush.nvim"] = {
     loaded = true,
@@ -136,11 +142,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/daishan/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
-  },
-  ["navigator.lua"] = {
-    loaded = true,
-    path = "/home/daishan/.local/share/nvim/site/pack/packer/start/navigator.lua",
-    url = "https://github.com/ray-x/navigator.lua"
   },
   ["nord.nvim"] = {
     loaded = true,
@@ -214,6 +215,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: galaxyline.nvim
+time([[Config for galaxyline.nvim]], true)
+try_loadstring("\27LJ\2\n9\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\30galaxyline.themes.eviline\frequire\0", "config", "galaxyline.nvim")
+time([[Config for galaxyline.nvim]], false)
 -- Config for: toggleterm.nvim
 time([[Config for toggleterm.nvim]], true)
 try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")

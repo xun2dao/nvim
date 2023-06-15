@@ -2,8 +2,7 @@ vim.g.mapleader = ","
 vim.g.maplocalleader = ","
 
 local map = vim.api.nvim_set_keymap
-local opt = {noremap = true, silent = true}
-
+local opt = { noremap = true, silent = true }
 
 -- 分屏
 
@@ -18,8 +17,7 @@ map("n", "<C-j>", "<C-w>j", opt)
 map("n", "<C-l>", "<C-w>l", opt)
 
 -- compile
-map("n", "<leader>b", ":!cmake --build build<CR>",opt)
-
+map("n", "<leader>b", ":!cmake --build build<CR>", opt)
 
 -- nvim-tree
 map("n", "<leader>t", ":NvimTreeToggle<CR>", opt)
@@ -40,7 +38,5 @@ map("n", "te", ":FTermExit<CR>", opt)
 map("n", "tc", ":FTermClose<CR>", opt)
 map("n", "tt", ":FTermToggle<CR>", opt)
 
-
 -- nvim terminal
 map("n", "tm", ":ToggleTerm<CR>", opt)
-
