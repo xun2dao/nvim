@@ -40,3 +40,10 @@ map("n", "tt", ":FTermToggle<CR>", opt)
 
 -- nvim terminal
 map("n", "tm", ":ToggleTerm<CR>", opt)
+
+-- dap
+map("n", "<F9>", ":DapStepOver<CR>", opt)
+map("n", "<F8>", ":DapToggleBreakpoint<CR>", opt)
+map("n", "<F10>", ":DapStepInto<CR>", opt)
+map("n", "<F5>", ":DapContinue<CR>", opt)
+map("n", "T", "<cmd>lua require'dapui'.eval()<cr>", opt)

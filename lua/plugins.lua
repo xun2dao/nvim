@@ -45,6 +45,15 @@ return require("packer").startup(function()
 		"williamboman/mason.nvim",
 	})
 
+	-- DAP
+	use({
+		"jay-babu/mason-nvim-dap.nvim",
+		"williamboman/mason.nvim",
+		"mfussenegger/nvim-dap",
+	})
+
+	-- DAP-UI
+	use({ "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } })
 	-- completion
 	use("hrsh7th/nvim-cmp") -- Autocompletion plugin
 	use("hrsh7th/cmp-nvim-lsp") -- LSP source for nvim-cmp
@@ -79,6 +88,15 @@ return require("packer").startup(function()
 			vim.g.vimtex_view_general_options_latexmk = "--unique"
 		end,
 		ft = "tex",
+	})
+
+	-- toggle terminal
+	use({
+		"akinsho/toggleterm.nvim",
+		tag = "*",
+		config = function()
+			require("toggleterm").setup()
+		end,
 	})
 
 	-- translate
