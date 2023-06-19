@@ -14,6 +14,7 @@ lua require('plugin-config/telescope')
 lua require('plugin-config/dashboard')
 lua require('plugin-config/formatter')
 lua require('plugin-config/toggleterm')
+lua require('plugin-config/navigator')
 
 
 colorscheme gruvbox

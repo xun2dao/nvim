@@ -16,6 +16,9 @@ map("n", "<C-k>", "<C-w>k", opt)
 map("n", "<C-j>", "<C-w>j", opt)
 map("n", "<C-l>", "<C-w>l", opt)
 
+--移动
+map("v", "J", ":m '>+1<CR>gv=gv", opt)
+map("v", "K", ":m '<-2<CR>gv=gv", opt)
 -- compile
 map("n", "<leader>b", ":!cmake --build build<CR>", opt)
 
@@ -37,6 +40,9 @@ map("n", "to", ":FTermOpen<CR>", opt)
 map("n", "te", ":FTermExit<CR>", opt)
 map("n", "tc", ":FTermClose<CR>", opt)
 map("n", "tt", ":FTermToggle<CR>", opt)
+
+-- 取消高亮
+map("n", ",nh", ":nohl<CR>", opt)
 
 -- nvim terminal
 map("n", "tm", ":ToggleTerm<CR>", opt)

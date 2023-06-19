@@ -18,6 +18,15 @@ return require("packer").startup(function()
 	-- zephyr
 	use("glepnir/zephyr-nvim")
 
+	-- navigator
+	use({
+		"ray-x/navigator.lua",
+		requires = {
+			{ "ray-x/guihua.lua", run = "cd lua/fzy && make" },
+			{ "neovim/nvim-lspconfig" },
+		},
+	})
+
 	-- nvim-tree
 	use({
 		"kyazdani42/nvim-tree.lua",
